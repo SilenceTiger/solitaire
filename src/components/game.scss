@@ -1,0 +1,35 @@
+.game-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .card-box {
+    position: absolute;
+    border-radius: 10%;
+    cursor: pointer;
+    .card {
+      display: none;
+      &.back {
+        display: block;
+      }
+    }
+    &.show {
+      .card {
+        display: block;
+        &.back {
+          display: none;
+        }
+      }
+    }
+    &.shadow {
+      box-shadow: 0 0 10px #fff;
+    }
+  }
+
+  .target-card-box {
+    border-radius: 10%;
+    &.shadow {
+      box-shadow: 0 0 10px #fff;
+    }
+  }
+}

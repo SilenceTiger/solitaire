@@ -1,0 +1,43 @@
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
+
+.App {
+  background-color: #afcffe;
+  overflow-y: auto;
+}
+
+.App {
+  .game-container {
+    margin: 100px auto;
+    width: 700px;
+    height: 600px;
+    border: solid 3px #fff;
+    border-radius: 30px;
+    background-color: #00a000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .App {
+    .game-container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
